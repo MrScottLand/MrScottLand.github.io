@@ -3999,19 +3999,24 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 
-/* 1. Right Slide (Existing) */
-.slide-in-scroll {
-  opacity: 0 !important;
-  transform: translateX(100px) !important; /* Force Right Start */
-  transition: all 2s ease-out !important;
+/* The End State: Must exist for animation to work */
+.slide-in-scroll.visible, 
+.slide-in-left.visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  transition: all 1s ease-out !important;
 }
 
-/* 2. Left Slide (New - Fixed) */
+/* The Start State: Hidden initially */
+.slide-in-scroll, 
 .slide-in-left {
   opacity: 0 !important;
-  transform: translateX(-100px) !important; /* Force Left Start (Negative) */
-  transition: all 2s ease-out !important;
+  transition: all 1s ease-out !important;
 }
+
+/* Specific Start Positions */
+.slide-in-scroll { transform: translateX(100px) !important; } /* From Right */
+.slide-in-left { transform: translateX(-100px) !important; } /* From Left */
 
 /* Force text color to be visible on dark backgrounds */
 .wrapper.alt.style2 .content h2,
