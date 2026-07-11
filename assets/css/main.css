@@ -3998,22 +3998,26 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 
- /* Slide-in from right animation */
-		.slide-in-scroll {
-		  opacity: 0;
-		  transform: translateX(100%);
-		  transition: all 1s ease-out;
-		}
-		
-		/* Active state: visible and in normal position */
-		.slide-in-scroll.visible {
-		  opacity: 1;
-		  transform: translateX(0);
-		}
+/* 1. Base State: Hidden and Off-Screen */
+.slide-in-scroll, 
+.slide-in-left {
+  opacity: 0 !important; /* Force hidden initially */
+  transition: all 1s ease-out !important; /* Force transition */
+  will-change: transform, opacity; /* Optimize performance */
+}
 
- /* Slide-in from left animation */
-		.slide-in-left {
-		  opacity: 0;
-		  transform: translateX(-100px); /* Starts from the left */
-		  transition: all 1s ease-out;
-		}
+/* 2. Specific Start Positions */
+.slide-in-scroll {
+  transform: translateX(100px) !important; /* Right */
+}
+
+.slide-in-left {
+  transform: translateX(-100px) !important; /* Left */
+}
+
+/* 3. End State: Visible and Normal Position */
+.slide-in-scroll.visible, 
+.slide-in-left.visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
