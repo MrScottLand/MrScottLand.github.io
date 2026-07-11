@@ -3999,35 +3999,29 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 
-/* --- 1. INITIAL STATE (Hidden & Off-Screen) --- */
+/* --- COMPLETE ANIMATION RESET --- */
+
+/* 1. Initial State: Hidden and Off-Screen */
 .slide-in-scroll, 
 .slide-in-left {
   opacity: 0 !important;
   color: #ffffff !important; /* White text */
-  transition: all 1s ease-out !important; /* Smooth movement */
+  transition: all 1s ease-out !important; /* Smooth slide */
+  will-change: transform, opacity;
 }
 
-/* 2. START POSITIONS */
+/* 2. Start Positions */
 .slide-in-scroll {
-  transform: translateX(100px) !important; /* Starts Right */
+  transform: translateX(100px) !important; /* From Right */
 }
 
 .slide-in-left {
-  transform: translateX(-100px) !important; /* Starts Left */
+  transform: translateX(-100px) !important; /* From Left */
 }
 
-/* --- 3. END STATE (Visible & Normal Position) --- */
-/* This class is added by JavaScript when you scroll */
+/* 3. End State: Visible and Centered (Triggered by JS) */
 .slide-in-scroll.visible, 
 .slide-in-left.visible {
   opacity: 1 !important;
-  transform: translateX(0) !important; /* Moves to center */
-}
-
-/* Force text color to be visible on dark backgrounds */
-.wrapper.alt.style2 .content h2,
-.wrapper.alt.style2 .content p,
-.slide-in-scroll,
-.slide-in-left {
-  color: #ffffff !important; /* White text */
+  transform: translateX(0) !important;
 }
