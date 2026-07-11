@@ -4019,7 +4019,7 @@ input, select, textarea {
   transform: translateX(0) !important; /* Force Center End */
 }
 
-/* --- REPLACEMENT CODE (Paste this at the bottom of main.css) --- */
+/* --- REPLACE ALL OLD SLANT CODE WITH THIS --- */
 .slant-cut {
   /* The Diagonal Cut */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
@@ -4037,6 +4037,6 @@ input, select, textarea {
 }
 
 /* Layering Logic: Ensures top slants sit ABOVE bottom slants */
-.slant-cut:nth-of-type(1) { z-index: 3 !important; }
-.slant-cut:nth-of-type(2) { z-index: 2 !important; }
-.slant-cut:nth-of-type(3) { z-index: 1 !important; }
+.slant-cut:nth-of-type(1) { z-index: 3 !important; } /* Top Image */
+.slant-cut:nth-of-type(2) { z-index: 2 !important; } /* Middle Image (Your "Second" one) */
+.slant-cut:nth-of-type(3) { z-index: 1 !important; } /* Bottom Image */
