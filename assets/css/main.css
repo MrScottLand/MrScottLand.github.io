@@ -3998,26 +3998,23 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 
-/* 1. Base State: Hidden and Off-Screen */
-.slide-in-scroll, 
-.slide-in-left {
-  opacity: 0 !important; /* Force hidden initially */
-  transition: all 1s ease-out !important; /* Force transition */
-  will-change: transform, opacity; /* Optimize performance */
-}
-
-/* 2. Specific Start Positions */
+/* 1. Right Slide (Existing) */
 .slide-in-scroll {
-  transform: translateX(100px) !important; /* Right */
+  opacity: 0 !important;
+  transform: translateX(100px) !important; /* Force Right Start */
+  transition: all 1s ease-out !important;
 }
 
+/* 2. Left Slide (New - Fixed) */
 .slide-in-left {
-  transform: translateX(-100px) !important; /* Left */
+  opacity: 0 !important;
+  transform: translateX(-100px) !important; /* Force Left Start (Negative) */
+  transition: all 1s ease-out !important;
 }
 
-/* 3. End State: Visible and Normal Position */
+/* --- FORCE ANIMATION END STATE (Both) --- */
 .slide-in-scroll.visible, 
 .slide-in-left.visible {
   opacity: 1 !important;
-  transform: translateX(0) !important;
+  transform: translateX(0) !important; /* Force Center End */
 }
