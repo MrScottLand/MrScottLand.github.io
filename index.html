@@ -59,9 +59,9 @@
 					    </section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
+								<h2 class="slide-in-left">Tortor dolore feugiat<br />
 								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<p class="slide-in-left">Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -162,8 +162,8 @@
 
 			 <script>
 	        document.addEventListener("DOMContentLoaded", function() {
-	            var observerElements = document.querySelectorAll('.slide-in-scroll');
-	            var observer = new IntersectionObserver(function(entries) {
+				var observerElements = document.querySelectorAll('.slide-in-scroll, .slide-in-left');	         
+				var observer = new IntersectionObserver(function(entries) {
 	                entries.forEach(function(entry) {
 	                    if (entry.isIntersecting) {
 	                        entry.target.classList.add('visible');
