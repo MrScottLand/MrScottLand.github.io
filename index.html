@@ -166,30 +166,33 @@
 			<script src="/assets/js/breakpoints.min.js"></script>
 			<script src="/assets/js/util.js"></script>
 			<script src="/assets/js/main.js"></script>
-
-    <!-- YOUR ANIMATION SCRIPT (MUST BE HERE) -->
+ 
+		<!-- ANIMATION SCRIPT (PASTE THIS EXACT BLOCK) -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            console.log("Animation Script Loaded"); // Check Console (F12) to confirm
+            
             var elements = document.querySelectorAll('.slide-in-scroll, .slide-in-left');
             
+            if (elements.length === 0) {
+                console.log("No elements found with slide-in classes.");
+                return;
+            }
+
             var observer = new IntersectionObserver(function(entries) {
                 entries.forEach(function(entry) {
                     if (entry.isIntersecting) {
-                        // Add the 'visible' class to trigger CSS
+                        console.log("Animating element:", entry.target); // Confirm trigger
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // Only animate once
+                        observer.unobserve(entry.target); // Animate once
                     }
                 });
-            }, { threshold: 0.1 }); // Triggers when 10% visible
+            }, { threshold: 0.1 }); // Trigger when 10% visible
 
             elements.forEach(function(el) {
                 observer.observe(el);
             });
         });
     </script>
-</body>
-</html>
-  });
-</script>
 </body>
 </html>
