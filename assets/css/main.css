@@ -4019,18 +4019,18 @@ input, select, textarea {
   transform: translateX(0) !important; /* Force Center End */
 }
 
-/* Sharp Slant Bottom (Matches the reference image angle) */
-.slant-bottom {
-  /* Steeper cut: 0% left, 25% right */
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%) !important;
+/* Balanced Slant for Middle Sections */
+.slant-cut {
+  /* Diagonal cut: 0% left, 20% right (Adjust 80% for steeper/shallower) */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
   
-  /* Pull next section up aggressively */
-  margin-bottom: -150px !important;
-  padding-bottom: 180px !important; /* Extra padding so content isn't cut */
+  /* Pulls the next section UP to create the overlap */
+  margin-bottom: -100px !important; 
   
-  /* Ensure solid background color like the image */
-  background-color: #2e3842 !important; /* Deep Blue/Grey */
+  /* Internal spacing so content isn't cut off */
+  padding-bottom: 120px !important; 
   
+  background-color: #2e3842 !important; /* Ensure solid background */
   position: relative;
   z-index: 1;
 }
