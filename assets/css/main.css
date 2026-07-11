@@ -4012,25 +4012,24 @@ input, select, textarea {
   transition: all 2s ease-out !important;
 }
 
-/* --- DIGITAL STYLE SLANT --- */
+/* --- DIGITAL SLANT FIX --- */
 .digital-slant {
-  /* 1. The Cut (Sharp Diagonal) */
+  /* The Sharp Diagonal Cut */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%) !important;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%) !important;
   
-  /* 2. The Overlap (Pulls next section up) */
+  /* Pull the next section UP to create the overlap */
   margin-bottom: -120px !important;
-  padding-bottom: 150px !important; /* Extra space so text isn't cut */
+  padding-bottom: 150px !important; /* Space inside so text isn't cut */
   
-  /* 3. Solid Background (CRITICAL: Must be solid to see the cut) */
-  background-color: #2e3842 !important; /* Dark Blue/Grey */
+  /* Solid Background (Essential) */
+  background-color: #2e3842 !important;
   
-  /* 4. Layering Setup */
   position: relative !important;
   z-index: 1 !important;
 }
 
-/* CRITICAL: Force the FIRST slanted section to sit ON TOP */
+/* CRITICAL: Force the 1st slanted section to sit ON TOP of the 2nd */
 .digital-slant:first-of-type {
   z-index: 2 !important;
 }
