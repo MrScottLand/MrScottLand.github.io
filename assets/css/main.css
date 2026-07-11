@@ -4006,7 +4006,7 @@ input, select, textarea {
 .slide-in-left {
   opacity: 0 !important;
   color: #ffffff !important; /* White text */
-  transition: all 1s ease-out !important; /* Smooth slide */
+  transition: all 2s ease-out !important; /* Smooth slide */
   will-change: transform, opacity;
 }
 
