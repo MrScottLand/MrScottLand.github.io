@@ -4047,3 +4047,24 @@ input, select, textarea {
   position: relative;
   z-index: 1;
 }
+
+/* Force visible background for slanted sections */
+.slant-bottom {
+  /* The Cut */
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%) !important;
+  
+  /* Spacing */
+  margin-bottom: -100px !important;
+  padding-bottom: 120px !important;
+  
+  /* CRITICAL: Force a background color so the cut is visible */
+  background-color: #2e3842 !important; /* Dark grey/blue */
+  
+  position: relative;
+  z-index: 1;
+}
+
+/* If you have a light section below, make the next one white/light */
+.slant-bottom + .spotlight {
+  background-color: #ffffff !important; /* White background for contrast */
+}
