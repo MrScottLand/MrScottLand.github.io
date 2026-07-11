@@ -4021,19 +4021,26 @@ input, select, textarea {
 
 /* Balanced Slant for Middle Sections */
 .slant-cut {
-  /* CRITICAL: Add the -webkit- prefix for Safari/Chrome compatibility */
+  /* CRITICAL: Both prefixes required for all browsers */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
   
-  /* Spacing to pull sections up */
+  /* Pull sections together */
   margin-bottom: -100px !important;
   padding-bottom: 120px !important;
   
-  /* Force background color so the cut is visible */
-  background-color: #2e3842 !important;
+  /* CRITICAL: Force solid background so the cut isn't transparent */
+  background-color: #2e3842 !important; 
   
+  /* CRITICAL: Ensure this section sits ON TOP of the one below it */
   position: relative;
-  z-index: 1;
+  z-index: 2 !important; 
+}
+
+/* Ensure the section BELOW the slant sits behind it */
+.slant-cut + .spotlight {
+  position: relative;
+  z-index: 1 !important;
 }
 
 /* Optional: Add a slight tilt to the text inside to match the dynamic feel */
