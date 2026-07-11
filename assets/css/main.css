@@ -4012,24 +4012,25 @@ input, select, textarea {
   transition: all 2s ease-out !important;
 }
 
-/* --- DIGITAL SLANT FIX --- */
+/* --- FINAL FIX: Digital Slant --- */
 .digital-slant {
-  /* The Sharp Diagonal Cut */
+  /* CRITICAL: Both lines required for Chrome/Safari */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%) !important;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%) !important;
   
-  /* Pull the next section UP to create the overlap */
+  /* Overlap settings */
   margin-bottom: -120px !important;
-  padding-bottom: 150px !important; /* Space inside so text isn't cut */
+  padding-bottom: 150px !important;
   
-  /* Solid Background (Essential) */
+  /* Solid background is mandatory */
   background-color: #2e3842 !important;
   
+  /* Enable layering */
   position: relative !important;
   z-index: 1 !important;
 }
 
-/* CRITICAL: Force the 1st slanted section to sit ON TOP of the 2nd */
+/* Force the FIRST slanted section to sit ON TOP */
 .digital-slant:first-of-type {
   z-index: 2 !important;
 }
