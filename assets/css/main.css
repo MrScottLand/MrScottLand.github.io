@@ -4019,42 +4019,17 @@ input, select, textarea {
   transform: translateX(0) !important; /* Force Center End */
 }
 
-/* --- GLOBAL SLANT SETTINGS --- */
+/* --- NEW REPLACEMENT CODE --- */
 .slant-cut {
-  /* 1. The Cut (Both prefixes required) */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
-  
-  /* 2. The Overlap (Pulls next section up) */
   margin-bottom: -100px !important;
   padding-bottom: 120px !important;
-  
-  /* 3. Solid Background (Essential for the cut to be visible) */
   background-color: #2e3842 !important;
-  
-  /* 4. CRITICAL: Enable Z-Index */
   position: relative !important;
 }
 
-/* --- LAYERING FIX (The "Secret Sauce") --- */
-/* 
-   Logic: The first slanted section must be on TOP (z-index 3).
-   The second slanted section must be BELOW it (z-index 2).
-   The straight section below must be BELOW that (z-index 1).
-   We use :nth-of-type to target them specifically.
-*/
-
-/* First Slanted Section (Top Image) - Sits on TOP */
-.slant-cut:nth-of-type(1) {
-  z-index: 3 !important;
-}
-
-/* Second Slanted Section (Middle Image) - Sits MIDDLE */
-.slant-cut:nth-of-type(2) {
-  z-index: 2 !important;
-}
-
-/* Any subsequent slanted sections */
-.slant-cut:nth-of-type(n+3) {
-  z-index: 1 !important;
-}
+/* Layering Logic */
+.slant-cut:nth-of-type(1) { z-index: 3 !important; }
+.slant-cut:nth-of-type(2) { z-index: 2 !important; }
+.slant-cut:nth-of-type(3) { z-index: 1 !important; }
