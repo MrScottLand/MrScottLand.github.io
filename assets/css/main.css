@@ -4026,18 +4026,24 @@ input, select, textarea {
   padding-top: 20px; /* Restore internal spacing */
 }
 
-/* Slant Bottom Only (Bottom cuts diagonally up) */
+/* Slant Bottom Only (Cuts diagonally up from left to right) */
 .slant-bottom {
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0 100%);
-  margin-bottom: -20px; /* Pull down to cover gap */
-  padding-bottom: 20px; /* Restore internal spacing */
+  /* The Cut: 0% height on left, 15% height on right */
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%) !important;
+  
+  /* Pull the next section up to close the gap */
+  margin-bottom: -100px !important; 
+  padding-bottom: 120px !important; /* Extra padding so text isn't cut off */
+  
+  position: relative;
+  z-index: 1;
 }
 
-/* Slant Both Top and Bottom (Uniform Right Lean) */
-.slant-uniform {
-  clip-path: polygon(0 20px, 100% 0, 100% calc(100% - 20px), 0 100%);
-  margin-top: -20px;
-  margin-bottom: -20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+/* Slant Top Only (Cuts diagonally down from left to right) */
+.slant-top {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%) !important;
+  margin-top: -100px !important;
+  padding-top: 120px !important;
+  position: relative;
+  z-index: 1;
 }
