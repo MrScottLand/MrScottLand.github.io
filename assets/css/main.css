@@ -4011,26 +4011,3 @@ input, select, textarea {
   transform: translateX(-100px) !important; /* Force Left Start (Negative) */
   transition: all 2s ease-out !important;
 }
-
-/* --- FINAL FIX: Digital Slant --- */
-.digital-slant {
-  /* CRITICAL: Both lines required for Chrome/Safari */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%) !important;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%) !important;
-  
-  /* Overlap settings */
-  margin-bottom: -120px !important;
-  padding-bottom: 150px !important;
-  
-  /* Solid background is mandatory */
-  background-color: #2e3842 !important;
-  
-  /* Enable layering */
-  position: relative !important;
-  z-index: 1 !important;
-}
-
-/* Force the FIRST slanted section to sit ON TOP */
-.digital-slant:first-of-type {
-  z-index: 2 !important;
-}
