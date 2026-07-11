@@ -4002,14 +4002,14 @@ input, select, textarea {
 .slide-in-scroll {
   opacity: 0 !important;
   transform: translateX(100px) !important; /* Force Right Start */
-  transition: all 2s ease-out !important;
+  transition: all 3s ease-out !important;
 }
 
 /* 2. Left Slide (New - Fixed) */
 .slide-in-left {
   opacity: 0 !important;
   transform: translateX(-100px) !important; /* Force Left Start (Negative) */
-  transition: all 2s ease-out !important;
+  transition: all 3s ease-out !important;
 }
 
 /* --- FORCE ANIMATION END STATE (Both) --- */
