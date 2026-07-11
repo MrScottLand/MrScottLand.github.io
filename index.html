@@ -167,35 +167,30 @@
 			<script src="/assets/js/util.js"></script>
 			<script src="/assets/js/main.js"></script>
 
-				<script>
-		  document.addEventListener("DOMContentLoaded", function() {
-		    // 1. Select BOTH classes
-		    var elementsToAnimate = document.querySelectorAll('.slide-in-scroll, .slide-in-left');
-		    
-		    // Safety check: If no elements found, stop here to prevent errors
-		    if (elementsToAnimate.length === 0) return;
-		
-		    // 2. Setup the Observer
-		    var observer = new IntersectionObserver(function(entries) {
-		      entries.forEach(function(entry) {
-		        // Only animate if the element is actually entering the view
-		        if (entry.isIntersecting) {
-		          entry.target.classList.add('visible');
-		          observer.unobserve(entry.target); // Stop watching after animation
-		        }
-		      });
-		    }, { 
-		      threshold: 0.1, // Trigger when 10% of the item is visible
-		      rootMargin: "0px" 
-		    });
-		
-		    // 3. Start Watching
-		    elementsToAnimate.forEach(function(el) {
-		      observer.observe(el);
-		    });
-		    
-		    console.log("Scroll animation script loaded successfully."); // Check console to verify
-		  });
-		</script>
-	</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    console.log("Animation script started..."); // Check Console (F12) to see if this appears
+    
+    var elements = document.querySelectorAll('.slide-in-scroll, .slide-in-left');
+    
+    if (elements.length === 0) {
+      console.log("No elements found with slide-in classes.");
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    elements.forEach(function(el) {
+      observer.observe(el);
+    });
+  });
+</script>
+</body>
 </html>
