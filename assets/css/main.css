@@ -4021,16 +4021,17 @@ input, select, textarea {
 
 /* Balanced Slant for Middle Sections */
 .slant-cut {
-  /* Diagonal cut: 0% left, 20% right (Adjust 80% for steeper/shallower) */
+  /* CRITICAL: Add the -webkit- prefix for Safari/Chrome compatibility */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
   
-  /* Pulls the next section UP to create the overlap */
-  margin-bottom: -100px !important; 
+  /* Spacing to pull sections up */
+  margin-bottom: -100px !important;
+  padding-bottom: 120px !important;
   
-  /* Internal spacing so content isn't cut off */
-  padding-bottom: 120px !important; 
+  /* Force background color so the cut is visible */
+  background-color: #2e3842 !important;
   
-  background-color: #2e3842 !important; /* Ensure solid background */
   position: relative;
   z-index: 1;
 }
