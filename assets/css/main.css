@@ -4019,17 +4019,24 @@ input, select, textarea {
   transform: translateX(0) !important; /* Force Center End */
 }
 
-/* --- NEW REPLACEMENT CODE --- */
+/* --- REPLACEMENT CODE (Paste this at the bottom of main.css) --- */
 .slant-cut {
+  /* The Diagonal Cut */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
+  
+  /* The Overlap (Pulls next section up) */
   margin-bottom: -100px !important;
   padding-bottom: 120px !important;
+  
+  /* Solid Background (Essential for the cut to show) */
   background-color: #2e3842 !important;
+  
+  /* Enable Layering */
   position: relative !important;
 }
 
-/* Layering Logic */
+/* Layering Logic: Ensures top slants sit ABOVE bottom slants */
 .slant-cut:nth-of-type(1) { z-index: 3 !important; }
 .slant-cut:nth-of-type(2) { z-index: 2 !important; }
 .slant-cut:nth-of-type(3) { z-index: 1 !important; }
