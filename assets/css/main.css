@@ -3999,19 +3999,16 @@ input, select, textarea {
 	}
 
  /* Slide-in from right animation */
-			@keyframes slideInFromRight {
-			  0% {
-			    transform: translateX(100%);
-			    opacity: 0;
-			  }
-			  100% {
-			    transform: translateX(0);
-			    opacity: 1;
-			  }
-			}
-			
-			.slide-in-right {
-			  animation: slideInFromRight 1s ease-out forwards;
-			}
+		.slide-in-scroll {
+		  opacity: 0;
+		  transform: translateX(100%);
+		  transition: all 1s ease-out;
+		}
+		
+		/* Active state: visible and in normal position */
+		.slide-in-scroll.visible {
+		  opacity: 1;
+		  transform: translateX(0);
+		}
 
  /* Slide-in from left animation */
