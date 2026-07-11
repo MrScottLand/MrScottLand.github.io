@@ -4019,35 +4019,28 @@ input, select, textarea {
   transform: translateX(0) !important; /* Force Center End */
 }
 
-/* Balanced Slant for Middle Sections */
+/* --- THE FIX: Force Slanted Sections to Float Above --- */
 .slant-cut {
-  /* CRITICAL: Both prefixes required for all browsers */
+  /* 1. The Cut (Both prefixes for compatibility) */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
   
-  /* Pull sections together */
+  /* 2. The Overlap */
   margin-bottom: -100px !important;
   padding-bottom: 120px !important;
   
-  /* CRITICAL: Force solid background so the cut isn't transparent */
-  background-color: #2e3842 !important; 
+  /* 3. The Background (Must be solid) */
+  background-color: #2e3842 !important;
   
-  /* CRITICAL: Ensure this section sits ON TOP of the one below it */
+  /* 4. CRITICAL FIX: Force this section to sit ON TOP */
   position: relative;
-  z-index: 2 !important; 
+  z-index: 10 !important; /* Higher number = sits on top */
 }
 
-/* Ensure the section BELOW the slant sits behind it */
+/* Ensure the section immediately following sits BEHIND */
 .slant-cut + .spotlight {
   position: relative;
-  z-index: 1 !important;
-}
-
-/* Optional: Add a slight tilt to the text inside to match the dynamic feel */
-.slant-bottom .content h2, 
-.slant-bottom .content p {
-  /* Optional: Slight tilt to match the energy */
-  /* transform: skewY(-2deg); */ 
+  z-index: 1 !important; /* Lower number = sits behind */
 }
 
 /* Force visible background for slanted sections */
