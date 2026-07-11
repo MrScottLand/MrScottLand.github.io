@@ -4012,3 +4012,8 @@ input, select, textarea {
 		}
 
  /* Slide-in from left animation */
+		.slide-in-left {
+		  opacity: 0;
+		  transform: translateX(-100px); /* Starts from the left */
+		  transition: all 1s ease-out;
+		}
