@@ -4034,7 +4034,12 @@ input, select, textarea {
   display: block !important;
 }
 
-/* Remove the background from spotlight sections so slants show cleanly */
-.wrapper.alt.style2 .spotlight {
+/* Remove ALL block backgrounds from the spotlight sections */
+.spotlight {
     background: transparent !important;
+}
 
+/* But keep the text and image styling */
+.spotlight .content {
+    background: transparent !important;
+}
