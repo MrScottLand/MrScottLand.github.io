@@ -4033,13 +4033,3 @@ input, select, textarea {
   margin: 0 auto !important; /* Centers the image */
   display: block !important;
 }
-
-/* Remove ALL block backgrounds from the spotlight sections */
-.spotlight {
-    background: transparent !important;
-}
-
-/* But keep the text and image styling */
-.spotlight .content {
-    background: transparent !important;
-}
