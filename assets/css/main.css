@@ -4033,3 +4033,35 @@ input, select, textarea {
   margin: 0 auto !important; /* Centers the image */
   display: block !important;
 }
+
+/* Slanted Divider */
+.slant-divider {
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+    background: transparent;
+    z-index: 2;
+}
+
+.slant-divider::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5; /* Match your section background */
+    transform: skewY(-3deg);
+    transform-origin: bottom left;
+}
+
+/* Alternative: Diagonal slant going the other way */
+.slant-divider-reverse::after {
+    transform: skewY(3deg);
+    transform-origin: bottom right;
+}
+
+/* For dark sections */
+.slant-divider-dark::after {
+    background: #2e3842; /* Match dark section background */
+}
