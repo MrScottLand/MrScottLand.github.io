@@ -4025,3 +4025,11 @@ input, select, textarea {
   opacity: 1 !important;
   transform: translateX(0) !important;
 }
+
+/* Make Spotlight Images Smaller */
+.spotlight .image img {
+  width: 50% !important; /* Change 50% to make it smaller (e.g., 40%) or larger */
+  max-width: 600px !important; /* Optional: Set a maximum width in pixels */
+  margin: 0 auto !important; /* Centers the image */
+  display: block !important;
+}
