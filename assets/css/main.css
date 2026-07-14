@@ -4101,13 +4101,13 @@ input, select, textarea {
     letter-spacing: 0.05em;
 }
 
-/* Navigation Arrows - 1.5px Black Outline */
+/* Navigation Arrows - 1px Black Outline */
 .review-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: transparent !important;
-    color: #ffffff !important;              /* ← White arrow inside */
+    color: #ffffff !important;
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
@@ -4119,9 +4119,27 @@ input, select, textarea {
     width: auto;
     height: auto;
     line-height: 1;
-    opacity: 0.9;
+    opacity: 0.8;
     -webkit-appearance: none;
     appearance: none;
+    /* 1px black outline */
+    text-shadow: 
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+}
+
+.review-arrow:hover {
+    color: #ffffff !important;
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+    text-shadow: 
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+}
 
 .review-arrow:focus {
     outline: none !important;
@@ -4140,25 +4158,6 @@ input, select, textarea {
 
 .review-arrow.next {
     right: -5px;
-}
-
-    /* 1px black outline */
-    text-shadow: 
-        -1px -1px 0 #000000,
-        1px -1px 0 #000000,
-        -1px 1px 0 #000000,
-        1px 1px 0 #000000;
-}
-
-.review-arrow:hover {
-    color: #ffffff !important;
-    opacity: 1;
-    transform: translateY(-50%) scale(1.1);
-    text-shadow: 
-        -1px -1px 0 #000000,
-        1px -1px 0 #000000,
-        -1px 1px 0 #000000,
-        1px 1px 0 #000000;
 }
 
 /* Dots */
