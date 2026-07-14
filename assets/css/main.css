@@ -4234,3 +4234,18 @@ input, select, textarea {
         border-radius: 35px !important;
     }
 }
+
+/* Bring "What our clients are saying" closer to the line */
+#two .major h2 {
+    margin-bottom: 0.3em !important;
+}
+
+#two .major h2::after {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+#two .major p {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
