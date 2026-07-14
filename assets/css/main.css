@@ -4061,8 +4061,8 @@ input, select, textarea {
 
 .review-content {
     background: #ffffff !important;
-    padding: 1.5em 2.5em !important;
-    border-radius: 25px !important;
+    padding: 1.0em 2.5em !important;
+    border-radius: 35px !important;
     border: 1px solid #e8e8e8;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
     position: relative;
@@ -4106,7 +4106,7 @@ input, select, textarea {
     top: 50%;
     transform: translateY(-50%);
     background: transparent !important;
-    color: #2e3842 !important;
+    color: #ffffff !important;
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
