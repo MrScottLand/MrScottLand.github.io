@@ -4046,7 +4046,7 @@ input, select, textarea {
 
 .review-slide {
     display: none;
-    padding: 0.3em;
+    padding: 0.2em 0;
     animation: fadeIn 0.6s ease-in-out;
 }
 
@@ -4055,13 +4055,13 @@ input, select, textarea {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
+    from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
 .review-content {
     background: #ffffff !important;
-    padding: 2em 2.5em !important;
+    padding: 1.5em 2.5em !important;
     border-radius: 25px !important;
     border: 1px solid #e8e8e8;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
@@ -4069,10 +4069,10 @@ input, select, textarea {
 }
 
 .review-text {
-    font-size: 1.2em;
-    line-height: 1.8;
+    font-size: 1.15em;
+    line-height: 1.7;
     font-style: italic;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.6em;
     color: #333333 !important;
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -4080,7 +4080,7 @@ input, select, textarea {
 
 .review-text::before {
     content: '"';
-    font-size: 2.2em;
+    font-size: 2em;
     color: #2e3842;
     opacity: 0.12;
     margin-right: 4px;
@@ -4088,26 +4088,28 @@ input, select, textarea {
 
 .review-author {
     font-weight: 700;
-    font-size: 1.05em;
+    font-size: 1em;
     color: #2e3842 !important;
-    margin-bottom: 0.1em;
+    margin-bottom: 0.05em;
     letter-spacing: 0.03em;
 }
 
 .review-location {
-    font-size: 0.85em;
+    font-size: 0.8em;
     color: #aaaaaa !important;
     letter-spacing: 0.05em;
 }
 
-/* Navigation Arrows - Same color as text */
+/* Navigation Arrows - No outline box */
 .review-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: transparent !important;
     color: #2e3842 !important;
-    border: none;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
     font-size: 2.5em;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -4117,13 +4119,21 @@ input, select, textarea {
     height: auto;
     border-radius: 0;
     line-height: 1;
-    opacity: 0.6;
+    opacity: 0.5;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .review-arrow:hover {
     color: #2e3842 !important;
     opacity: 1;
-    transform: translateY(-50%) scale(1.1);
+    transform: translateY(-50%) scale(1.15);
+}
+
+.review-arrow:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .review-arrow.prev {
@@ -4137,19 +4147,20 @@ input, select, textarea {
 /* Dots */
 .review-dots {
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 .dot {
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
     background: #dddddd;
-    margin: 0 7px;
+    margin: 0 6px;
     cursor: pointer;
     transition: all 0.3s ease;
     border: none;
+    outline: none;
 }
 
 .dot.active {
@@ -4185,12 +4196,12 @@ input, select, textarea {
     }
     
     .review-content {
-        padding: 1.5em 1.5em !important;
+        padding: 1.2em 1.5em !important;
         border-radius: 20px !important;
     }
     
     .review-text::before {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 }
 
@@ -4204,7 +4215,7 @@ input, select, textarea {
     }
     
     .review-content {
-        padding: 1.2em 1em !important;
+        padding: 1em 1.2em !important;
         border-radius: 15px !important;
     }
 }
