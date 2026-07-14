@@ -4063,7 +4063,7 @@ input, select, textarea {
     background: #ffffff !important;
     padding: 1.0em 2.5em !important;
     border-radius: 35px !important;
-    border: 1px solid #e8e8e8;
+    border: 2px solid rgba(0, 0, 0, 0.15) !important;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
     position: relative;
 }
@@ -4107,19 +4107,19 @@ input, select, textarea {
     transform: translateY(-50%);
     background: transparent !important;
     color: #ffffff !important;
-    border: none !important;
+    border: 2px solid rgba(0, 0, 0, 0.15) !important;
     outline: none !important;
     box-shadow: none !important;
     font-size: 2.5em;
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 10;
-    padding: 0;
+    padding: 0.1em 0.2em;
     width: auto;
     height: auto;
-    border-radius: 0;
+    border-radius: 4px;
     line-height: 1;
-    opacity: 0.8;
+    opacity: 0.5;
     -webkit-appearance: none;
     appearance: none;
 }
