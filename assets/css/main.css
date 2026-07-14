@@ -4122,31 +4122,23 @@ input, select, textarea {
     opacity: 0.9;
     -webkit-appearance: none;
     appearance: none;
-    /* 1.5px black outline using text-shadow */
+    /* 1px black outline */
     text-shadow: 
-        -1.5px -1.5px 0 #000000,
-        1.5px -1.5px 0 #000000,
-        -1.5px 1.5px 0 #000000,
-        1.5px 1.5px 0 #000000,
-        -1.5px 0 0 #000000,
-        1.5px 0 0 #000000,
-        0 -1.5px 0 #000000,
-        0 1.5px 0 #000000;
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
 }
 
 .review-arrow:hover {
-    color: #ffffff !important;              /* ← Stay white on hover */
+    color: #ffffff !important;
     opacity: 1;
     transform: translateY(-50%) scale(1.1);
     text-shadow: 
-        -1.5px -1.5px 0 #000000,
-        1.5px -1.5px 0 #000000,
-        -1.5px 1.5px 0 #000000,
-        1.5px 1.5px 0 #000000,
-        -1.5px 0 0 #000000,
-        1.5px 0 0 #000000,
-        0 -1.5px 0 #000000,
-        0 1.5px 0 #000000;
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
 }
 
 .review-arrow:focus {
