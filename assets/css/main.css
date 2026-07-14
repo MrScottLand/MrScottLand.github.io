@@ -4033,3 +4033,132 @@ input, select, textarea {
   margin: 0 auto !important; /* Centers the image */
   display: block !important;
 }
+
+
+/* Review Slider Styles - For style1 (light background) */
+.review-slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 50px;
+}
+
+.review-slide {
+    display: none;
+    padding: 1em;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.review-slide.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.review-content {
+    background: #ffffff !important;
+    padding: 2.5em 2em;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.review-text {
+    font-size: 1.2em;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 1em;
+    color: #333333 !important;
+}
+
+.review-author {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #2e3842 !important;
+    margin-bottom: 0.2em;
+}
+
+.review-location {
+    font-size: 0.9em;
+    color: #888888 !important;
+}
+
+/* Navigation Arrows */
+.review-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #2e3842 !important;
+    color: #ffffff !important;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+.review-arrow:hover {
+    background: #1c252e !important;
+}
+
+.review-arrow.prev {
+    left: 0;
+}
+
+.review-arrow.next {
+    right: 0;
+}
+
+/* Dots */
+.review-dots {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #cccccc;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
+}
+
+.dot.active {
+    background: #2e3842 !important;
+}
+
+.dot:hover {
+    background: #999999;
+}
+
+/* Responsive */
+@media screen and (max-width: 736px) {
+    .review-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8em;
+    }
+    
+    .review-slider-container {
+        padding: 0 30px;
+    }
+    
+    .review-text {
+        font-size: 1em;
+    }
+    
+    .review-content {
+        padding: 1.5em 1em;
+    }
+}
