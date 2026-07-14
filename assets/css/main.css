@@ -4142,6 +4142,25 @@ input, select, textarea {
     right: -5px;
 }
 
+    /* 1px black outline */
+    text-shadow: 
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+}
+
+.review-arrow:hover {
+    color: #ffffff !important;
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+    text-shadow: 
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+}
+
 /* Dots */
 .review-dots {
     text-align: center;
