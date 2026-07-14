@@ -4038,15 +4038,15 @@ input, select, textarea {
 /* Review Slider Styles - Curvy Design */
 .review-slider-container {
     position: relative;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     overflow: visible;
-    padding: 0 60px;
+    padding: 0 50px;
 }
 
 .review-slide {
     display: none;
-    padding: 0.5em;
+    padding: 0.3em;
     animation: fadeIn 0.6s ease-in-out;
 }
 
@@ -4061,18 +4061,18 @@ input, select, textarea {
 
 .review-content {
     background: #ffffff !important;
-    padding: 3em 3.5em;
-    border-radius: 30px !important;
+    padding: 2em 2.5em !important;
+    border-radius: 25px !important;
     border: 1px solid #e8e8e8;
-    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
     position: relative;
 }
 
 .review-text {
-    font-size: 1.3em;
-    line-height: 1.9;
+    font-size: 1.2em;
+    line-height: 1.8;
     font-style: italic;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
     color: #333333 !important;
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -4080,27 +4080,27 @@ input, select, textarea {
 
 .review-text::before {
     content: '"';
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: #2e3842;
-    opacity: 0.15;
-    margin-right: 5px;
+    opacity: 0.12;
+    margin-right: 4px;
 }
 
 .review-author {
     font-weight: 700;
-    font-size: 1.15em;
+    font-size: 1.05em;
     color: #2e3842 !important;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.1em;
     letter-spacing: 0.03em;
 }
 
 .review-location {
-    font-size: 0.9em;
+    font-size: 0.85em;
     color: #aaaaaa !important;
     letter-spacing: 0.05em;
 }
 
-/* Navigation Arrows - Standalone, No Circles */
+/* Navigation Arrows - Same color as text */
 .review-arrow {
     position: absolute;
     top: 50%;
@@ -4108,7 +4108,7 @@ input, select, textarea {
     background: transparent !important;
     color: #2e3842 !important;
     border: none;
-    font-size: 2.8em;
+    font-size: 2.5em;
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 10;
@@ -4117,43 +4117,44 @@ input, select, textarea {
     height: auto;
     border-radius: 0;
     line-height: 1;
+    opacity: 0.6;
 }
 
 .review-arrow:hover {
-    color: #1c252e !important;
+    color: #2e3842 !important;
+    opacity: 1;
     transform: translateY(-50%) scale(1.1);
 }
 
 .review-arrow.prev {
-    left: -10px;
+    left: -5px;
 }
 
 .review-arrow.next {
-    right: -10px;
+    right: -5px;
 }
 
-/* Dots - Curvy Style */
+/* Dots */
 .review-dots {
     text-align: center;
-    margin-top: 2.5em;
+    margin-top: 2em;
 }
 
 .dot {
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background: #dddddd;
-    margin: 0 8px;
+    margin: 0 7px;
     cursor: pointer;
     transition: all 0.3s ease;
     border: none;
-    box-shadow: none;
 }
 
 .dot.active {
     background: #2e3842 !important;
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .dot:hover {
@@ -4164,7 +4165,7 @@ input, select, textarea {
 /* Responsive */
 @media screen and (max-width: 736px) {
     .review-slider-container {
-        padding: 0 30px;
+        padding: 0 35px;
     }
     
     .review-arrow {
@@ -4172,11 +4173,11 @@ input, select, textarea {
     }
     
     .review-arrow.prev {
-        left: -5px;
+        left: -3px;
     }
     
     .review-arrow.next {
-        right: -5px;
+        right: -3px;
     }
     
     .review-text {
@@ -4184,7 +4185,7 @@ input, select, textarea {
     }
     
     .review-content {
-        padding: 1.8em 1.5em;
+        padding: 1.5em 1.5em !important;
         border-radius: 20px !important;
     }
     
@@ -4195,7 +4196,7 @@ input, select, textarea {
 
 @media screen and (max-width: 480px) {
     .review-slider-container {
-        padding: 0 20px;
+        padding: 0 25px;
     }
     
     .review-arrow {
@@ -4203,7 +4204,7 @@ input, select, textarea {
     }
     
     .review-content {
-        padding: 1.5em 1.2em;
+        padding: 1.2em 1em !important;
         border-radius: 15px !important;
     }
 }
