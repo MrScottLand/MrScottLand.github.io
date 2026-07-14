@@ -4253,3 +4253,8 @@ input, select, textarea {
 #two .major {
     margin-bottom: 1em !important;     /* ← Tiny gap between subheader and box */
 }
+
+/* Shorten gap between review box and dots */
+.review-dots {
+    margin-top: 0.8em !important;     /* ← Adjust this value */
+}
