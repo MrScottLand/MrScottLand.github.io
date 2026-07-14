@@ -4235,11 +4235,7 @@ input, select, textarea {
     }
 }
 
-/* Move both headers closer to the line, keep review box in place */
-#two .major {
-    margin-bottom: 0.5em !important;     /* ← Reduce space between header and review box */
-}
-
+/* Move headers closer to line, keep review box in place */
 #two .major h2 {
     margin-bottom: 0.1em !important;     /* ← REVIEWS closer to line */
     line-height: 1.2 !important;
@@ -4254,7 +4250,7 @@ input, select, textarea {
     margin-bottom: 0 !important;
 }
 
-/* Keep review box in the SAME spot */
+/* Keep review box in the SAME spot - DON'T change this */
 .review-slider-container {
     margin-top: 0 !important;
     padding-top: 0 !important;
