@@ -81,3 +81,48 @@
 		}
 
 })(jQuery);
+
+// Review Slider
+let currentReviewIndex = 0;
+const slides = document.querySelectorAll('.review-slide');
+const dots = document.querySelectorAll('.dot');
+
+function showReview(index) {
+    // Hide all slides
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Show current slide
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+}
+
+function changeReview(direction) {
+    currentReviewIndex += direction;
+    
+    if (currentReviewIndex >= slides.length) {
+        currentReviewIndex = 0;
+    }
+    if (currentReviewIndex < 0) {
+        currentReviewIndex = slides.length - 1;
+    }
+    
+    showReview(currentReviewIndex);
+}
+
+function currentReview(index) {
+    currentReviewIndex = index;
+    showReview(currentReviewIndex);
+}
+
+// Auto-play (optional - uncomment to enable)
+// let autoPlay = setInterval(() => changeReview(1), 5000);
+
+// Pause on hover (optional)
+// const container = document.querySelector('.review-slider-container');
+// if (container) {
+//     container.addEventListener('mouseenter', () => clearInterval(autoPlay));
+//     container.addEventListener('mouseleave', () => {
+//         autoPlay = setInterval(() => changeReview(1), 5000);
+//     });
+// }
