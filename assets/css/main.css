@@ -4101,13 +4101,13 @@ input, select, textarea {
     letter-spacing: 0.05em;
 }
 
-/* Navigation Arrows - Stay White Always */
+/* Navigation Arrows - 1.5px Black Outline */
 .review-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: transparent !important;
-    color: #ffffff !important;              /* ← White arrows */
+    color: #ffffff !important;              /* ← White arrow inside */
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
@@ -4122,13 +4122,31 @@ input, select, textarea {
     opacity: 0.7;
     -webkit-appearance: none;
     appearance: none;
-    text-shadow: none !important;
+    /* 1.5px black outline using text-shadow */
+    text-shadow: 
+        -1.5px -1.5px 0 #000000,
+        1.5px -1.5px 0 #000000,
+        -1.5px 1.5px 0 #000000,
+        1.5px 1.5px 0 #000000,
+        -1.5px 0 0 #000000,
+        1.5px 0 0 #000000,
+        0 -1.5px 0 #000000,
+        0 1.5px 0 #000000;
 }
 
 .review-arrow:hover {
     color: #ffffff !important;              /* ← Stay white on hover */
-    opacity: 1;                             /* ← Just gets brighter */
+    opacity: 1;
     transform: translateY(-50%) scale(1.1);
+    text-shadow: 
+        -1.5px -1.5px 0 #000000,
+        1.5px -1.5px 0 #000000,
+        -1.5px 1.5px 0 #000000,
+        1.5px 1.5px 0 #000000,
+        -1.5px 0 0 #000000,
+        1.5px 0 0 #000000,
+        0 -1.5px 0 #000000,
+        0 1.5px 0 #000000;
 }
 
 .review-arrow:focus {
@@ -4155,25 +4173,6 @@ input, select, textarea {
     text-align: center;
     margin-top: 1.5em;
 }
-
-.review-arrow {
-    color: #ffffff !important;
-    text-shadow: 
-        -1px -1px 0 rgba(255, 255, 255, 0.5),
-        1px -1px 0 rgba(255, 255, 255, 0.5),
-        -1px 1px 0 rgba(255, 255, 255, 0.5),
-        1px 1px 0 rgba(255, 255, 255, 0.5);
-}
-
-.review-arrow:hover {
-    color: #ffffff !important;
-    text-shadow: 
-        -1.5px -1px 0 #ffffff,
-        1px -1px 0 #ffffff,
-        -1px 1px 0 #ffffff,
-        1px 1px 0 #ffffff;
-}
-
 .dot {
     display: inline-block;
     width: 11px;
