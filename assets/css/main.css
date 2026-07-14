@@ -4235,30 +4235,21 @@ input, select, textarea {
     }
 }
 
-/* Move headers closer to line, keep review box in place */
-#two .major {
-    margin-bottom: 0.5em !important;
-	
+/* Reviews section - complete spacing */
 #two .major h2 {
-    margin-bottom: 0.1em !important;     /* ← REVIEWS closer to line */
+    margin-bottom: 0.1em !important;
     line-height: 1.2 !important;
 }
 
 #two .major h2::after {
-    margin: 0.1em auto 0.1em auto !important;  /* ← Tighter around line */
+    margin: 0.1em auto 0.1em auto !important;
 }
 
 #two .major p {
-    margin-top: 0.1em !important;        /* ← Subheader closer to line */
+    margin-top: 0.1em !important;
     margin-bottom: 0 !important;
 }
 
-/* Keep review box in the SAME spot - DON'T change this */
-.review-slider-container {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-
-.review-slide {
-    padding-top: 0 !important;
+#two .major {
+    margin-bottom: 0.3em !important;     /* ← Controls box distance from subheader */
 }
