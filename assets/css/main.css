@@ -4101,13 +4101,13 @@ input, select, textarea {
     letter-spacing: 0.05em;
 }
 
-/* Navigation Arrows - Outline around the arrow character */
+/* Navigation Arrows - Stay White Always */
 .review-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: transparent !important;
-    color: #ffffff !important;
+    color: #ffffff !important;              /* ← White arrows */
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
@@ -4119,19 +4119,15 @@ input, select, textarea {
     width: auto;
     height: auto;
     line-height: 1;
-    opacity: 0.9;
+    opacity: 0.7;
     -webkit-appearance: none;
     appearance: none;
-    text-shadow: 
-        -1.5px -1.5px 0 #000000,
-        1.5px -1.5px 0 #000000,
-        -1.5px 1.5px 0 #000000,
-        1.5px 1.5px 0 #000000;  /* ← Black outline around the text */
+    text-shadow: none !important;
 }
 
 .review-arrow:hover {
-    color: #2e3842 !important;
-    opacity: 1;
+    color: #ffffff !important;              /* ← Stay white on hover */
+    opacity: 1;                             /* ← Just gets brighter */
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -4158,6 +4154,24 @@ input, select, textarea {
 .review-dots {
     text-align: center;
     margin-top: 1.5em;
+}
+
+.review-arrow {
+    color: #ffffff !important;
+    text-shadow: 
+        -1px -1px 0 rgba(255, 255, 255, 0.5),
+        1px -1px 0 rgba(255, 255, 255, 0.5),
+        -1px 1px 0 rgba(255, 255, 255, 0.5),
+        1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.review-arrow:hover {
+    color: #ffffff !important;
+    text-shadow: 
+        -1.5px -1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
 }
 
 .dot {
