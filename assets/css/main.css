@@ -4251,5 +4251,5 @@ input, select, textarea {
 }
 
 #two .major {
-    margin-bottom: 0.2em !important;     /* ← Tiny gap between subheader and box */
+    margin-bottom: 0.5em !important;     /* ← Tiny gap between subheader and box */
 }
