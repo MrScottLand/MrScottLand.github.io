@@ -4119,7 +4119,7 @@ input, select, textarea {
     height: auto;
     border-radius: 0;
     line-height: 1;
-    opacity: 0.5;
+    opacity: 0.8;
     -webkit-appearance: none;
     appearance: none;
 }
@@ -4196,8 +4196,8 @@ input, select, textarea {
     }
     
     .review-content {
-        padding: 1.2em 1.5em !important;
-        border-radius: 20px !important;
+        padding: 1.0em 1.5em !important;
+        border-radius: 35px !important;
     }
     
     .review-text::before {
@@ -4216,6 +4216,6 @@ input, select, textarea {
     
     .review-content {
         padding: 1em 1.2em !important;
-        border-radius: 15px !important;
+        border-radius: 35px !important;
     }
 }
