@@ -4236,6 +4236,9 @@ input, select, textarea {
 }
 
 /* Move headers closer to line, keep review box in place */
+#two .major {
+    margin-bottom: 0.5em !important;
+	
 #two .major h2 {
     margin-bottom: 0.1em !important;     /* ← REVIEWS closer to line */
     line-height: 1.2 !important;
