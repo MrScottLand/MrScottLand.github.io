@@ -4259,46 +4259,57 @@ input, select, textarea {
     margin-top: 0.8em !important;     /* ← Adjust this value */
 }
 
-/* Photo Strip - Full Width Rectangles */
+/* Photo Strip - Full Width Vertical Rectangles */
 .photo-strip-full {
     display: flex;
-    gap: 4px;
+    gap: 6px;                     /* ← Gap between photos */
+    padding: 0 10px;              /* ← Gap on left and right edges */
     width: 100%;
 }
 
-.photo-item-rect {
+.photo-item-vertical {
     flex: 1;
-    height: 150px;
+    height: 200px;                /* ← Taller than wide (vertical) */
     overflow: hidden;
+    border-radius: 4px;
+    background: #1c1c1c;
 }
 
-.photo-item-rect img {
+.photo-item-vertical img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;          /* ← Full image shown, no cropping */
     display: block;
     transition: transform 0.3s ease;
 }
 
-.photo-item-rect:hover img {
+.photo-item-vertical:hover img {
     transform: scale(1.05);
+}
+
+/* Remove wrapper padding */
+.wrapper .inner {
+    max-width: 100% !important;
+    padding: 0 !important;
 }
 
 /* Responsive */
 @media screen and (max-width: 736px) {
-    .photo-item-rect {
-        height: 100px;
+    .photo-item-vertical {
+        height: 140px;
     }
     .photo-strip-full {
-        gap: 3px;
+        gap: 4px;
+        padding: 0 6px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .photo-item-rect {
-        height: 70px;
+    .photo-item-vertical {
+        height: 100px;
     }
     .photo-strip-full {
-        gap: 2px;
+        gap: 3px;
+        padding: 0 4px;
     }
 }
