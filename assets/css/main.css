@@ -4312,3 +4312,12 @@ input, select, textarea {
         padding: 0 4px;
     }
 }
+
+.photo-item-vertical {
+    flex: 1;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 2px solid #ffffff;        /* ← White outline */
+    background: #1c1c1c;
+}
