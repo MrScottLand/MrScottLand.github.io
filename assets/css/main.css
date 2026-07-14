@@ -4235,21 +4235,31 @@ input, select, textarea {
     }
 }
 
-/* Reviews section - keep everything tight */
+/* Move both headers closer to the line, keep review box in place */
 #two .major {
-    margin-bottom: 1em !important;
+    margin-bottom: 0.5em !important;     /* ← Reduce space between header and review box */
 }
 
 #two .major h2 {
-    margin-bottom: 0.1em !important;          /* ← REVIEWS closer to line */
+    margin-bottom: 0.1em !important;     /* ← REVIEWS closer to line */
     line-height: 1.2 !important;
 }
 
 #two .major h2::after {
-    margin: 0.15em auto 0.15em auto !important;  /* ← Tighter around line */
+    margin: 0.1em auto 0.1em auto !important;  /* ← Tighter around line */
 }
 
 #two .major p {
-    margin-top: 0.1em !important;             /* ← What clients say closer to line */
+    margin-top: 0.1em !important;        /* ← Subheader closer to line */
     margin-bottom: 0 !important;
+}
+
+/* Keep review box in the SAME spot */
+.review-slider-container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.review-slide {
+    padding-top: 0 !important;
 }
