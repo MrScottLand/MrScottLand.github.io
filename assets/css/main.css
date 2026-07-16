@@ -4515,7 +4515,7 @@ a:hover {
 }
 
 #footer h2, #footer h3 {
-    color: #faf6f0 !important;
+    color: #e2dbd3 !important;
 }
 
 #footer p {
@@ -4536,7 +4536,7 @@ a:hover {
 }
 
 #cta h2 {
-    color: #faf6f0 !important;
+    color: #e2dbd3 !important;
 }
 
 #cta p {
@@ -4545,13 +4545,13 @@ a:hover {
 
 #cta .button {
     border-color: #faf6f0 !important;
-    color: #faf6f0 !important;
+    color: #e2dbd3 !important;
 }
 
 #cta .button.primary {
     background: #1a4a4a !important;
     border-color: #1a4a4a !important;
-    color: #faf6f0 !important;
+    color: #e2dbd3 !important;
 }
 
 #cta .button.primary:hover {
