@@ -4559,6 +4559,10 @@ a:hover {
     border-color: #0a2a2a !important;
 }
 
+/* See More Link - Updated Color */
+#banner .more {
+    color: #e2dbd3 !important;  /* ← Changed to e2dbd3 */
+}
 /* ============================================
    SPOTLIGHT SECTIONS - LIGHTER TEXT
    ============================================ */
