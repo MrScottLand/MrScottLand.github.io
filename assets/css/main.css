@@ -4648,3 +4648,9 @@ body, p, li, .content p, .description {
     border-color: #1a6a5a !important;
     color: #e2dbd3 !important;
 }
+
+#header .logo a, 
+#header h1 a, 
+.site-title {
+    color: #e2dbd3 !important;
+}
