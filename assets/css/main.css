@@ -4626,7 +4626,6 @@ body, p, li, .content p, .description {
     background: #faf6f0 !important;
 }
 
-/* Banner with Gradient - Matches Portrait Session 1 */
 #banner {
-    background: linear-gradient(135deg, #1a4a4a 0%, #2a7a7a 100%) !important;
+    background: linear-gradient(135deg, #2e3842 0%, #4a5a6a 100%) !important;
 }
