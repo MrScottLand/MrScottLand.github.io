@@ -4315,78 +4315,77 @@ input, select, textarea {
 }
 
 /* ============================================
-/* ============================================
-   LAVENDER FIELDS COLOR PALETTE
+   FOREST-OCEAN HYBRID PALETTE
    ============================================ */
 
 /* Variables */
 :root {
-    --lavender: #b8a9c9;
-    --deep-plum: #5a4a6b;
-    --soft-lilac: #d4c5d9;
-    --cream: #faf5f0;
-    --white: #ffffff;
-    --mauve: #8a7a9a;
-    --light-lavender: #c9bcd9;
+    --deep-teal: #1a4a4a;
+    --soft-teal: #2a8a7a;
+    --warm-sand: #f5ede3;
+    --sage-blue: #8aa8a8;
+    --cream: #faf6f0;
+    --lighter-text: #3a5a5a;
+    --light-teal: #5ab5a8;
 }
 
-/* Buttons - Lavender */
+/* Buttons - Soft Teal */
 .button.primary {
-    background: #b8a9c9 !important;
-    border-color: #b8a9c9 !important;
+    background: #2a8a7a !important;
+    border-color: #2a8a7a !important;
     color: #ffffff !important;
 }
 
 .button.primary:hover {
-    background: #8a7a9a !important;
-    border-color: #8a7a9a !important;
+    background: #1a6a5a !important;
+    border-color: #1a6a5a !important;
 }
 
 .button {
     background: transparent !important;
-    border-color: #b8a9c9 !important;
-    color: #b8a9c9 !important;
+    border-color: #2a8a7a !important;
+    color: #2a8a7a !important;
 }
 
 .button:hover {
-    background: #b8a9c9 !important;
+    background: #2a8a7a !important;
     color: #ffffff !important;
 }
 
-/* Headings - Deep Plum */
+/* Headings - Deep Teal */
 h1, h2, h3, h4, h5, h6 {
-    color: #5a4a6b !important;
+    color: #1a4a4a !important;
 }
 
 h1 a, h2 a, h3 a {
-    color: #5a4a6b !important;
+    color: #1a4a4a !important;
 }
 
-/* Body Text - Mauve */
+/* Body Text - Lighter Teal (easier to read) */
 body, p, li, .content p {
-    color: #8a7a9a !important;
+    color: #3a5a5a !important;
 }
 
-/* Links - Lavender */
+/* Links - Soft Teal */
 a {
-    color: #b8a9c9 !important;
+    color: #2a8a7a !important;
 }
 
 a:hover {
-    color: #8a7a9a !important;
+    color: #1a6a5a !important;
 }
 
 /* Section Backgrounds */
 .wrapper.style1 {
-    background: #faf5f0 !important;
+    background: #faf6f0 !important;
 }
 
 .wrapper.style2 {
-    background: #ffffff !important;
+    background: #f5ede3 !important;
 }
 
 .wrapper.style3 {
-    background: #5a4a6b !important;
+    background: #1a4a4a !important;
 }
 
 .wrapper.style3 h1,
@@ -4394,105 +4393,105 @@ a:hover {
 .wrapper.style3 h3,
 .wrapper.style3 p,
 .wrapper.style3 li {
-    color: #faf5f0 !important;
+    color: #faf6f0 !important;
 }
 
 .wrapper.style3 a {
-    color: #d4c5d9 !important;
+    color: #8aa8a8 !important;
 }
 
 .wrapper.style3 a:hover {
-    color: #b8a9c9 !important;
+    color: #5ab5a8 !important;
 }
 
 /* Banner */
 #banner {
-    background: #5a4a6b !important;
+    background: #1a4a4a !important;
 }
 
 #banner h2 {
-    color: #faf5f0 !important;
+    color: #faf6f0 !important;
 }
 
 #banner p {
-    color: #d4c5d9 !important;
+    color: #8aa8a8 !important;
 }
 
 /* Header */
 #header {
-    background: #5a4a6b !important;
+    background: #1a4a4a !important;
 }
 
 #header h1 a {
-    color: #faf5f0 !important;
+    color: #faf6f0 !important;
 }
 
 #header h1 a:hover {
-    color: #d4c5d9 !important;
+    color: #8aa8a8 !important;
 }
 
 /* Menu */
 #menu {
-    background: #5a4a6b !important;
+    background: #1a4a4a !important;
 }
 
 #menu a {
-    color: #faf5f0 !important;
+    color: #faf6f0 !important;
 }
 
 #menu a:hover {
-    color: #d4c5d9 !important;
+    color: #8aa8a8 !important;
 }
 
 /* Review Section */
 .review-content {
     background: #ffffff !important;
-    border: 1px solid #d4c5d9 !important;
-    box-shadow: 0 6px 25px rgba(90, 74, 107, 0.08) !important;
+    border: 1px solid #8aa8a8 !important;
+    box-shadow: 0 6px 25px rgba(26, 74, 74, 0.08) !important;
 }
 
 .review-text {
-    color: #5a4a6b !important;
+    color: #1a4a4a !important;
 }
 
 .review-text::before {
-    color: #b8a9c9 !important;
-    opacity: 0.3 !important;
+    color: #2a8a7a !important;
+    opacity: 0.25 !important;
 }
 
 .review-author {
-    color: #5a4a6b !important;
+    color: #1a4a4a !important;
 }
 
 .review-location {
-    color: #c9bcd9 !important;
+    color: #8aa8a8 !important;
 }
 
 /* Review Dots */
 .dot {
-    background: #d4c5d9 !important;
+    background: #8aa8a8 !important;
 }
 
 .dot.active {
-    background: #b8a9c9 !important;
+    background: #2a8a7a !important;
 }
 
 .dot:hover {
-    background: #8a7a9a !important;
+    background: #1a6a5a !important;
 }
 
 /* Review Arrows */
 .review-arrow {
-    color: #b8a9c9 !important;
+    color: #2a8a7a !important;
     text-shadow: 
-        -1px -1px 0 #5a4a6b,
-        1px -1px 0 #5a4a6b,
-        -1px 1px 0 #5a4a6b,
-        1px 1px 0 #5a4a6b !important;
+        -1px -1px 0 #1a4a4a,
+        1px -1px 0 #1a4a4a,
+        -1px 1px 0 #1a4a4a,
+        1px 1px 0 #1a4a4a !important;
 }
 
 .review-arrow:hover {
-    color: #8a7a9a !important;
+    color: #1a6a5a !important;
 }
 
 /* Features Section (style3) */
@@ -4502,74 +4501,74 @@ a:hover {
 }
 
 .wrapper.style3 .features li h3 {
-    color: #d4c5d9 !important;
+    color: #8aa8a8 !important;
 }
 
 .wrapper.style3 .features li p {
-    color: #e8dce8 !important;
+    color: #d5e0e0 !important;
 }
 
 /* Photo Strip */
 .photo-item-vertical {
-    background: #5a4a6b !important;
+    background: #1a4a4a !important;
 }
 
 .photo-item-vertical img {
-    border: 2px solid #d4c5d9 !important;
+    border: 2px solid #8aa8a8 !important;
 }
 
 .photo-item-vertical:hover img {
-    border-color: #b8a9c9 !important;
+    border-color: #2a8a7a !important;
 }
 
 /* Footer */
 #footer {
-    background: #3a2a4b !important;
+    background: #0a2a2a !important;
 }
 
 #footer h2, #footer h3 {
-    color: #faf5f0 !important;
+    color: #faf6f0 !important;
 }
 
 #footer p {
-    color: #d4c5d9 !important;
+    color: #8aa8a8 !important;
 }
 
 #footer a {
-    color: #d4c5d9 !important;
+    color: #8aa8a8 !important;
 }
 
 #footer a:hover {
-    color: #b8a9c9 !important;
+    color: #5ab5a8 !important;
 }
 
 /* CTA Section */
 #cta {
-    background: #b8a9c9 !important;
+    background: #2a8a7a !important;
 }
 
 #cta h2 {
-    color: #faf5f0 !important;
+    color: #faf6f0 !important;
 }
 
 #cta p {
-    color: #f0e8f0 !important;
+    color: #f5ede3 !important;
 }
 
 #cta .button {
-    border-color: #faf5f0 !important;
-    color: #faf5f0 !important;
+    border-color: #faf6f0 !important;
+    color: #faf6f0 !important;
 }
 
 #cta .button.primary {
-    background: #5a4a6b !important;
-    border-color: #5a4a6b !important;
-    color: #faf5f0 !important;
+    background: #1a4a4a !important;
+    border-color: #1a4a4a !important;
+    color: #faf6f0 !important;
 }
 
 #cta .button.primary:hover {
-    background: #3a2a4b !important;
-    border-color: #3a2a4b !important;
+    background: #0a2a2a !important;
+    border-color: #0a2a2a !important;
 }
 
 /* Spotlight Sections */
@@ -4578,25 +4577,25 @@ a:hover {
 }
 
 .spotlight .content h2 {
-    color: #5a4a6b !important;
+    color: #1a4a4a !important;
 }
 
 .spotlight .content p {
-    color: #8a7a9a !important;
+    color: #3a5a5a !important;
 }
 
 /* Responsive - Mobile Menu */
 @media screen and (max-width: 736px) {
     #menu {
-        background: #3a2a4b !important;
+        background: #0a2a2a !important;
     }
 }
 
-/* Slant Dividers - Match Lavender Colors */
+/* Slant Dividers - Match Hybrid Colors */
 .slant-divider-dark {
-    background: #5a4a6b !important;
+    background: #1a4a4a !important;
 }
 
 .slant-divider-light {
-    background: #faf5f0 !important;
+    background: #faf6f0 !important;
 }
