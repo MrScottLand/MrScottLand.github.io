@@ -4315,77 +4315,78 @@ input, select, textarea {
 }
 
 /* ============================================
-   EARTHY COLOR PALETTE
+   NATURAL COLOR PALETTE
    ============================================ */
 
 /* Variables */
 :root {
-    --sage: #9cae8c;
-    --terracotta: #c67a5c;
-    --cream: #faf6f0;
-    --warm-brown: #8b7355;
-    --dark-brown: #4a3728;
+    --forest: #2d5a3d;
+    --sage: #8fb08c;
+    --sand: #e8ddd0;
     --clay: #c49a6c;
-    --off-white: #f5ede3;
+    --dark-bark: #3d2b1f;
+    --mist: #d8d5cd;
+    --natural-white: #faf8f5;
+    --moss: #6b7b4e;
 }
 
-/* Buttons - Sage Green */
+/* Buttons - Sage */
 .button.primary {
-    background: #9cae8c !important;
-    border-color: #9cae8c !important;
+    background: #8fb08c !important;
+    border-color: #8fb08c !important;
     color: #ffffff !important;
 }
 
 .button.primary:hover {
-    background: #7d8f6d !important;
-    border-color: #7d8f6d !important;
+    background: #6d8f6a !important;
+    border-color: #6d8f6a !important;
 }
 
 .button {
     background: transparent !important;
-    border-color: #9cae8c !important;
-    color: #9cae8c !important;
+    border-color: #8fb08c !important;
+    color: #8fb08c !important;
 }
 
 .button:hover {
-    background: #9cae8c !important;
+    background: #8fb08c !important;
     color: #ffffff !important;
 }
 
-/* Headings - Dark Brown */
+/* Headings - Forest Green */
 h1, h2, h3, h4, h5, h6 {
-    color: #4a3728 !important;
+    color: #2d5a3d !important;
 }
 
 h1 a, h2 a, h3 a {
-    color: #4a3728 !important;
+    color: #2d5a3d !important;
 }
 
-/* Body Text - Warm Brown */
+/* Body Text - Dark Bark */
 body, p, li, .content p {
-    color: #8b7355 !important;
+    color: #3d2b1f !important;
 }
 
-/* Links - Terracotta */
+/* Links - Moss/Sage */
 a {
-    color: #c67a5c !important;
+    color: #6b7b4e !important;
 }
 
 a:hover {
-    color: #a85d3f !important;
+    color: #8fb08c !important;
 }
 
 /* Section Backgrounds */
 .wrapper.style1 {
-    background: #faf6f0 !important;
+    background: #faf8f5 !important;
 }
 
 .wrapper.style2 {
-    background: #f5ede3 !important;
+    background: #e8ddd0 !important;
 }
 
 .wrapper.style3 {
-    background: #4a3728 !important;
+    background: #2d5a3d !important;
 }
 
 .wrapper.style3 h1,
@@ -4393,7 +4394,7 @@ a:hover {
 .wrapper.style3 h3,
 .wrapper.style3 p,
 .wrapper.style3 li {
-    color: #faf6f0 !important;
+    color: #faf8f5 !important;
 }
 
 .wrapper.style3 a {
@@ -4401,16 +4402,16 @@ a:hover {
 }
 
 .wrapper.style3 a:hover {
-    color: #d4af37 !important;
+    color: #e8ddd0 !important;
 }
 
 /* Banner */
 #banner {
-    background: #4a3728 !important;
+    background: #2d5a3d !important;
 }
 
 #banner h2 {
-    color: #faf6f0 !important;
+    color: #faf8f5 !important;
 }
 
 #banner p {
@@ -4419,11 +4420,11 @@ a:hover {
 
 /* Header */
 #header {
-    background: #4a3728 !important;
+    background: #2d5a3d !important;
 }
 
 #header h1 a {
-    color: #faf6f0 !important;
+    color: #faf8f5 !important;
 }
 
 #header h1 a:hover {
@@ -4432,11 +4433,11 @@ a:hover {
 
 /* Menu */
 #menu {
-    background: #4a3728 !important;
+    background: #2d5a3d !important;
 }
 
 #menu a {
-    color: #faf6f0 !important;
+    color: #faf8f5 !important;
 }
 
 #menu a:hover {
@@ -4446,52 +4447,52 @@ a:hover {
 /* Review Section */
 .review-content {
     background: #ffffff !important;
-    border: 1px solid #e8ddd0 !important;
-    box-shadow: 0 6px 25px rgba(74, 55, 40, 0.08) !important;
+    border: 1px solid #d8d5cd !important;
+    box-shadow: 0 6px 25px rgba(45, 90, 61, 0.08) !important;
 }
 
 .review-text {
-    color: #4a3728 !important;
+    color: #3d2b1f !important;
 }
 
 .review-text::before {
     color: #c49a6c !important;
-    opacity: 0.3 !important;
+    opacity: 0.25 !important;
 }
 
 .review-author {
-    color: #4a3728 !important;
+    color: #2d5a3d !important;
 }
 
 .review-location {
-    color: #b8a090 !important;
+    color: #a89a8a !important;
 }
 
 /* Review Dots */
 .dot {
-    background: #d5c8bc !important;
+    background: #d8d5cd !important;
 }
 
 .dot.active {
-    background: #c67a5c !important;
+    background: #8fb08c !important;
 }
 
 .dot:hover {
-    background: #b8a090 !important;
+    background: #6b7b4e !important;
 }
 
 /* Review Arrows */
 .review-arrow {
-    color: #c67a5c !important;
+    color: #8fb08c !important;
     text-shadow: 
-        -1px -1px 0 #4a3728,
-        1px -1px 0 #4a3728,
-        -1px 1px 0 #4a3728,
-        1px 1px 0 #4a3728 !important;
+        -1px -1px 0 #2d5a3d,
+        1px -1px 0 #2d5a3d,
+        -1px 1px 0 #2d5a3d,
+        1px 1px 0 #2d5a3d !important;
 }
 
 .review-arrow:hover {
-    color: #a85d3f !important;
+    color: #6d8f6a !important;
 }
 
 /* Features Section (style3) */
@@ -4505,12 +4506,12 @@ a:hover {
 }
 
 .wrapper.style3 .features li p {
-    color: #d5c8bc !important;
+    color: #d8d5cd !important;
 }
 
 /* Photo Strip */
 .photo-item-vertical {
-    background: #4a3728 !important;
+    background: #2d5a3d !important;
 }
 
 .photo-item-vertical img {
@@ -4518,20 +4519,20 @@ a:hover {
 }
 
 .photo-item-vertical:hover img {
-    border-color: #9cae8c !important;
+    border-color: #8fb08c !important;
 }
 
 /* Footer */
 #footer {
-    background: #3a2a1e !important;
+    background: #1d3d2a !important;
 }
 
 #footer h2, #footer h3 {
-    color: #faf6f0 !important;
+    color: #faf8f5 !important;
 }
 
 #footer p {
-    color: #b8a090 !important;
+    color: #d8d5cd !important;
 }
 
 #footer a {
@@ -4539,36 +4540,36 @@ a:hover {
 }
 
 #footer a:hover {
-    color: #d4af37 !important;
+    color: #e8ddd0 !important;
 }
 
 /* CTA Section */
 #cta {
-    background: #9cae8c !important;
+    background: #8fb08c !important;
 }
 
 #cta h2 {
-    color: #faf6f0 !important;
+    color: #faf8f5 !important;
 }
 
 #cta p {
-    color: #f5ede3 !important;
+    color: #e8ddd0 !important;
 }
 
 #cta .button {
-    border-color: #faf6f0 !important;
-    color: #faf6f0 !important;
+    border-color: #faf8f5 !important;
+    color: #faf8f5 !important;
 }
 
 #cta .button.primary {
-    background: #4a3728 !important;
-    border-color: #4a3728 !important;
-    color: #faf6f0 !important;
+    background: #2d5a3d !important;
+    border-color: #2d5a3d !important;
+    color: #faf8f5 !important;
 }
 
 #cta .button.primary:hover {
-    background: #5a4738 !important;
-    border-color: #5a4738 !important;
+    background: #3d6a4d !important;
+    border-color: #3d6a4d !important;
 }
 
 /* Spotlight Sections */
@@ -4577,16 +4578,25 @@ a:hover {
 }
 
 .spotlight .content h2 {
-    color: #4a3728 !important;
+    color: #2d5a3d !important;
 }
 
 .spotlight .content p {
-    color: #8b7355 !important;
+    color: #3d2b1f !important;
 }
 
 /* Responsive - Mobile Menu */
 @media screen and (max-width: 736px) {
     #menu {
-        background: #3a2a1e !important;
+        background: #1d3d2a !important;
     }
+}
+
+/* Slant Dividers - Match Natural Colors */
+.slant-divider-dark {
+    background: #2d5a3d !important;
+}
+
+.slant-divider-light {
+    background: #e8ddd0 !important;
 }
