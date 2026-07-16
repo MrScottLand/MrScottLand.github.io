@@ -4619,17 +4619,17 @@ body, p, li, .content p, .description {
 
 /* Main Heading - Connor Scott Photography */
 #banner .inner h2 {
-    color: #faf6f0 !important;  /* ← Cream - matches Portrait Session 1 background */
+    color: #e2dbd3 !important;  /* ← Cream - matches Portrait Session 1 background */
 }
 
 /* Subheader Text */
 #banner .inner p {
-    color: #faf6f0 !important;  /* ← Cream - matches Portrait Session 1 background */
+    color: #e2dbd3 !important;  /* ← Cream - matches Portrait Session 1 background */
 }
 
 /* Book Now Button - Text Color */
 #banner .button.primary {
-    color: #faf6f0 !important;  /* ← Cream - matches Portrait Session 1 background */
+    color: #e2dbd3 !important;  /* ← Cream - matches Portrait Session 1 background */
     background: #2a7a7a !important;  /* ← Soft Teal background for button */
     border-color: #2a7a7a !important;
 }
@@ -4637,5 +4637,5 @@ body, p, li, .content p, .description {
 #banner .button.primary:hover {
     background: #1a6a5a !important;
     border-color: #1a6a5a !important;
-    color: #faf6f0 !important;
+    color: #e2dbd3 !important;
 }
