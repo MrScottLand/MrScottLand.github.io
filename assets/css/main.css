@@ -4315,18 +4315,19 @@ input, select, textarea {
 }
 
 /* ============================================
-   FOREST-OCEAN HYBRID PALETTE
+   FOREST-OCEAN HYBRID PALETTE (Lighter Text)
    ============================================ */
 
 /* Variables */
 :root {
     --deep-teal: #1a4a4a;
-    --soft-teal: #2a8a7a;
+    --soft-teal: #2a7a7a;
     --warm-sand: #f5ede3;
     --sage-blue: #8aa8a8;
     --cream: #faf6f0;
-    --lighter-text: #3a5a5a;
+    --lighter-text: #4a6a6a;
     --light-teal: #5ab5a8;
+    --warm-gray: #5a7a7a;
 }
 
 /* Buttons - Soft Teal */
@@ -4352,18 +4353,18 @@ input, select, textarea {
     color: #ffffff !important;
 }
 
-/* Headings - Deep Teal */
+/* Headings - Soft Teal (lighter) */
 h1, h2, h3, h4, h5, h6 {
-    color: #1a4a4a !important;
+    color: #2a7a7a !important;
 }
 
 h1 a, h2 a, h3 a {
-    color: #1a4a4a !important;
+    color: #2a7a7a !important;
 }
 
-/* Body Text - Lighter Teal (easier to read) */
+/* Body Text - Warm Gray (lighter) */
 body, p, li, .content p {
-    color: #3a5a5a !important;
+    color: #5a7a7a !important;
 }
 
 /* Links - Soft Teal */
@@ -4451,7 +4452,7 @@ a:hover {
 }
 
 .review-text {
-    color: #1a4a4a !important;
+    color: #2a7a7a !important;
 }
 
 .review-text::before {
@@ -4460,7 +4461,7 @@ a:hover {
 }
 
 .review-author {
-    color: #1a4a4a !important;
+    color: #2a7a7a !important;
 }
 
 .review-location {
@@ -4571,17 +4572,42 @@ a:hover {
     border-color: #0a2a2a !important;
 }
 
-/* Spotlight Sections */
-.spotlight .content {
-    background: transparent !important;
-}
+/* ============================================
+   SPOTLIGHT SECTIONS - LIGHTER TEXT
+   ============================================ */
 
+/* Session Headings - Lighter */
 .spotlight .content h2 {
-    color: #1a4a4a !important;
+    color: #2a7a7a !important;
 }
 
+/* Session Descriptions - Lighter */
 .spotlight .content p {
-    color: #3a5a5a !important;
+    color: #5a7a7a !important;
+}
+
+/* ============================================
+   GENERAL TEXT - LIGHTER
+   ============================================ */
+
+/* All headings - lighter */
+h1, h2, h3, h4, h5, h6 {
+    color: #2a7a7a !important;
+}
+
+/* All body text - lighter */
+body, p, li, .content p, .description {
+    color: #5a7a7a !important;
+}
+
+/* Review text - lighter */
+.review-text {
+    color: #2a7a7a !important;
+}
+
+/* Review author - lighter */
+.review-author {
+    color: #2a7a7a !important;
 }
 
 /* Responsive - Mobile Menu */
