@@ -4612,15 +4612,3 @@ body, p, li, .content p, .description {
 .slant-divider-light {
     background: #faf6f0 !important;
 }
-
-/* Restore Original Spectral Banner */
-#banner {
-    background: #2e3842;
-    background-image: linear-gradient(135deg, rgba(46, 56, 66, 0.9), rgba(46, 56, 66, 0.6)), url("../../images/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 10em 0;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
