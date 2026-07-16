@@ -4625,3 +4625,8 @@ body, p, li, .content p, .description {
 .slant-divider-light {
     background: #faf6f0 !important;
 }
+
+/* Banner with Gradient - Matches Portrait Session 1 */
+#banner {
+    background: linear-gradient(135deg, #1a4a4a 0%, #2a7a7a 100%) !important;
+}
