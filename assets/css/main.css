@@ -4626,6 +4626,14 @@ body, p, li, .content p, .description {
     background: #faf6f0 !important;
 }
 
+/* Restore Original Spectral Banner */
 #banner {
-    background: linear-gradient(135deg, #2e3842 0%, #4a5a6a 100%) !important;
+    background: #2e3842;
+    background-image: linear-gradient(135deg, rgba(46, 56, 66, 0.9), rgba(46, 56, 66, 0.6)), url("../../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
