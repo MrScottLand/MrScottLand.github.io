@@ -4563,6 +4563,11 @@ a:hover {
 #banner .more {
     color: #e2dbd3 !important;  /* ← Changed to e2dbd3 */
 }
+
+/* See More Arrow */
+#banner .more::after {
+    color: #e2dbd3 !important;
+}
 /* ============================================
    SPOTLIGHT SECTIONS - LIGHTER TEXT
    ============================================ */
