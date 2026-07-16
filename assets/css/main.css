@@ -4313,3 +4313,280 @@ input, select, textarea {
         padding: 0 4px;
     }
 }
+
+/* ============================================
+   EARTHY COLOR PALETTE
+   ============================================ */
+
+/* Variables */
+:root {
+    --sage: #9cae8c;
+    --terracotta: #c67a5c;
+    --cream: #faf6f0;
+    --warm-brown: #8b7355;
+    --dark-brown: #4a3728;
+    --clay: #c49a6c;
+    --off-white: #f5ede3;
+}
+
+/* Buttons - Sage Green */
+.button.primary {
+    background: #9cae8c !important;
+    border-color: #9cae8c !important;
+    color: #ffffff !important;
+}
+
+.button.primary:hover {
+    background: #7d8f6d !important;
+    border-color: #7d8f6d !important;
+}
+
+.button {
+    background: transparent !important;
+    border-color: #9cae8c !important;
+    color: #9cae8c !important;
+}
+
+.button:hover {
+    background: #9cae8c !important;
+    color: #ffffff !important;
+}
+
+/* Headings - Dark Brown */
+h1, h2, h3, h4, h5, h6 {
+    color: #4a3728 !important;
+}
+
+h1 a, h2 a, h3 a {
+    color: #4a3728 !important;
+}
+
+/* Body Text - Warm Brown */
+body, p, li, .content p {
+    color: #8b7355 !important;
+}
+
+/* Links - Terracotta */
+a {
+    color: #c67a5c !important;
+}
+
+a:hover {
+    color: #a85d3f !important;
+}
+
+/* Section Backgrounds */
+.wrapper.style1 {
+    background: #faf6f0 !important;
+}
+
+.wrapper.style2 {
+    background: #f5ede3 !important;
+}
+
+.wrapper.style3 {
+    background: #4a3728 !important;
+}
+
+.wrapper.style3 h1,
+.wrapper.style3 h2,
+.wrapper.style3 h3,
+.wrapper.style3 p,
+.wrapper.style3 li {
+    color: #faf6f0 !important;
+}
+
+.wrapper.style3 a {
+    color: #c49a6c !important;
+}
+
+.wrapper.style3 a:hover {
+    color: #d4af37 !important;
+}
+
+/* Banner */
+#banner {
+    background: #4a3728 !important;
+}
+
+#banner h2 {
+    color: #faf6f0 !important;
+}
+
+#banner p {
+    color: #c49a6c !important;
+}
+
+/* Header */
+#header {
+    background: #4a3728 !important;
+}
+
+#header h1 a {
+    color: #faf6f0 !important;
+}
+
+#header h1 a:hover {
+    color: #c49a6c !important;
+}
+
+/* Menu */
+#menu {
+    background: #4a3728 !important;
+}
+
+#menu a {
+    color: #faf6f0 !important;
+}
+
+#menu a:hover {
+    color: #c49a6c !important;
+}
+
+/* Review Section */
+.review-content {
+    background: #ffffff !important;
+    border: 1px solid #e8ddd0 !important;
+    box-shadow: 0 6px 25px rgba(74, 55, 40, 0.08) !important;
+}
+
+.review-text {
+    color: #4a3728 !important;
+}
+
+.review-text::before {
+    color: #c49a6c !important;
+    opacity: 0.3 !important;
+}
+
+.review-author {
+    color: #4a3728 !important;
+}
+
+.review-location {
+    color: #b8a090 !important;
+}
+
+/* Review Dots */
+.dot {
+    background: #d5c8bc !important;
+}
+
+.dot.active {
+    background: #c67a5c !important;
+}
+
+.dot:hover {
+    background: #b8a090 !important;
+}
+
+/* Review Arrows */
+.review-arrow {
+    color: #c67a5c !important;
+    text-shadow: 
+        -1px -1px 0 #4a3728,
+        1px -1px 0 #4a3728,
+        -1px 1px 0 #4a3728,
+        1px 1px 0 #4a3728 !important;
+}
+
+.review-arrow:hover {
+    color: #a85d3f !important;
+}
+
+/* Features Section (style3) */
+.wrapper.style3 .features li {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.wrapper.style3 .features li h3 {
+    color: #c49a6c !important;
+}
+
+.wrapper.style3 .features li p {
+    color: #d5c8bc !important;
+}
+
+/* Photo Strip */
+.photo-item-vertical {
+    background: #4a3728 !important;
+}
+
+.photo-item-vertical img {
+    border: 2px solid #c49a6c !important;
+}
+
+.photo-item-vertical:hover img {
+    border-color: #9cae8c !important;
+}
+
+/* Footer */
+#footer {
+    background: #3a2a1e !important;
+}
+
+#footer h2, #footer h3 {
+    color: #faf6f0 !important;
+}
+
+#footer p {
+    color: #b8a090 !important;
+}
+
+#footer a {
+    color: #c49a6c !important;
+}
+
+#footer a:hover {
+    color: #d4af37 !important;
+}
+
+/* CTA Section */
+#cta {
+    background: #9cae8c !important;
+}
+
+#cta h2 {
+    color: #faf6f0 !important;
+}
+
+#cta p {
+    color: #f5ede3 !important;
+}
+
+#cta .button {
+    border-color: #faf6f0 !important;
+    color: #faf6f0 !important;
+}
+
+#cta .button.primary {
+    background: #4a3728 !important;
+    border-color: #4a3728 !important;
+    color: #faf6f0 !important;
+}
+
+#cta .button.primary:hover {
+    background: #5a4738 !important;
+    border-color: #5a4738 !important;
+}
+
+/* Spotlight Sections */
+.spotlight .content {
+    background: transparent !important;
+}
+
+.spotlight .content h2 {
+    color: #4a3728 !important;
+}
+
+.spotlight .content p {
+    color: #8b7355 !important;
+}
+
+/* Responsive - Mobile Menu */
+@media screen and (max-width: 736px) {
+    #menu {
+        background: #3a2a1e !important;
+    }
+}
