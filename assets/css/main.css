@@ -4654,3 +4654,19 @@ body, p, li, .content p, .description {
 .site-title {
     color: #e2dbd3 !important;
 }
+
+/* Change Hamburger Icon Color */
+#navPanelToggle .fa-bars {
+    color: #e2dbd3 !important;
+}
+
+/* Change Mobile Menu Text and Links */
+#navPanel .link {
+    color: #e2dbd3 !important;
+    border-bottom-color: rgba(226, 219, 211, 0.5); /* Optional: Updates the divider lines too */
+}
+
+/* Change Close Icon Color (X) inside the menu */
+#navPanel .close {
+    color: #e2dbd3 !important;
+}
