@@ -4654,31 +4654,3 @@ body, p, li, .content p, .description {
 .site-title {
     color: #e2dbd3 !important;
 }
-
-/* ============================================
-   MENU TEXT & HAMBURGER LINES ONLY - e2dbd3
-   ============================================ */
-
-/* "Menu" Text Only - No Background Change */
-#header .menuToggle {
-    color: #e2dbd3 !important;
-    background: transparent !important;
-}
-
-#header .menuToggle:hover {
-    color: #faf6f0 !important;
-    background: transparent !important;
-}
-
-/* Hamburger Lines Only - No Background Change */
-#header .menuToggle span,
-#header .menuToggle span::before,
-#header .menuToggle span::after {
-    background-color: #e2dbd3 !important;
-}
-
-#header .menuToggle:hover span,
-#header .menuToggle:hover span::before,
-#header .menuToggle:hover span::after {
-    background-color: #faf6f0 !important;
-}
