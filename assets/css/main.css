@@ -4654,3 +4654,21 @@ body, p, li, .content p, .description {
 .site-title {
     color: #e2dbd3 !important;
 }
+
+/* FINAL OVERRIDE - e2dbd3 Colors */
+#header h1 a,
+#header .menuToggle,
+#banner .more,
+#banner .more::after,
+#cta .button:not(.primary) {
+    color: #e2dbd3 !important;
+}
+
+#header .menuToggle span,
+#header .menuToggle span::before,
+#header .menuToggle span::after,
+#banner .more::after,
+#cta .button:not(.primary) {
+    border-color: #e2dbd3 !important;
+    background-color: #e2dbd3 !important;
+}
