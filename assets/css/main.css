@@ -4672,29 +4672,3 @@ body, p, li, .content p, .description {
     border-color: #e2dbd3 !important;
     background-color: #1b4a4b !important;
 }
-
-/* --- SLIDE IN ANIMATION --- */
-
-/* 1. Initial State: Hidden and Off-Screen */
-.slide-in-scroll, 
-.slide-in-left {
-  opacity: 0 !important;
-  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-  will-change: transform, opacity;
-}
-
-/* 2. Start Positions */
-.slide-in-scroll {
-  transform: translateX(80px) !important; /* From Right */
-}
-
-.slide-in-left {
-  transform: translateX(-80px) !important; /* From Left */
-}
-
-/* 3. End State: Visible and Centered (Triggered by JS) */
-.slide-in-scroll.visible, 
-.slide-in-left.visible {
-  opacity: 1 !important;
-  transform: translateX(0) !important;
-}
