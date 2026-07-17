@@ -4313,3 +4313,362 @@ input, select, textarea {
         padding: 0 4px;
     }
 }
+
+/* ============================================
+   FOREST-OCEAN HYBRID PALETTE (Lighter Text)
+   ============================================ */
+
+/* Variables */
+:root {
+    --deep-teal: #1a4a4a;
+    --soft-teal: #2a7a7a;
+    --warm-sand: #f5ede3;
+    --sage-blue: #8aa8a8;
+    --cream: #faf6f0;
+    --lighter-text: #4a6a6a;
+    --light-teal: #5ab5a8;
+    --warm-gray: #5a7a7a;
+}
+
+/* Buttons - Soft Teal */
+.button.primary {
+    background: #2a8a7a !important;
+    border-color: #2a8a7a !important;
+    color: #ffffff !important;
+}
+
+.button.primary:hover {
+    background: #1a6a5a !important;
+    border-color: #1a6a5a !important;
+}
+
+.button {
+    background: transparent !important;
+    border-color: #2a8a7a !important;
+    color: #2a8a7a !important;
+}
+
+.button:hover {
+    background: #2a8a7a !important;
+    color: #ffffff !important;
+}
+
+/* Headings - Soft Teal (lighter) */
+h1, h2, h3, h4, h5, h6 {
+    color: #2a7a7a !important;
+}
+
+h1 a, h2 a, h3 a {
+    color: #2a7a7a !important;
+}
+
+/* Body Text - Warm Gray (lighter) */
+body, p, li, .content p {
+    color: #5a7a7a !important;
+}
+
+/* Links - Soft Teal */
+a {
+    color: #2a8a7a !important;
+}
+
+a:hover {
+    color: #1a6a5a !important;
+}
+
+/* Section Backgrounds */
+.wrapper.style1 {
+    background: #faf6f0 !important;
+}
+
+.wrapper.style2 {
+    background: #f5ede3 !important;
+}
+
+.wrapper.style3 {
+    background: #1a4a4a !important;
+}
+
+.wrapper.style3 h1,
+.wrapper.style3 h2,
+.wrapper.style3 h3,
+.wrapper.style3 p,
+.wrapper.style3 li {
+    color: #faf6f0 !important;
+}
+
+.wrapper.style3 a {
+    color: #8aa8a8 !important;
+}
+
+.wrapper.style3 a:hover {
+    color: #5ab5a8 !important;
+}
+
+/* Header */
+#header {
+    background: #1a4a4a !important;
+}
+
+#header h1 a {
+    color: #e2dbd3 !important;
+}
+
+#header h1 a:hover {
+    color: #e2dbd3 !important;
+}
+
+/* Menu */
+#menu {
+    background: #1a4a4a !important;
+}
+
+#menu a {
+    color: #faf6f0 !important;
+}
+
+#menu a:hover {
+    color: #8aa8a8 !important;
+}
+
+/* Review Section */
+.review-content {
+    background: #ffffff !important;
+    border: 1px solid #8aa8a8 !important;
+    box-shadow: 0 6px 25px rgba(26, 74, 74, 0.08) !important;
+}
+
+.review-text {
+    color: #2a7a7a !important;
+}
+
+.review-text::before {
+    color: #2a8a7a !important;
+    opacity: 0.25 !important;
+}
+
+.review-author {
+    color: #2a7a7a !important;
+}
+
+.review-location {
+    color: #8aa8a8 !important;
+}
+
+/* Review Dots */
+.dot {
+    background: #8aa8a8 !important;
+}
+
+.dot.active {
+    background: #2a8a7a !important;
+}
+
+.dot:hover {
+    background: #1a6a5a !important;
+}
+
+/* Review Arrows */
+.review-arrow {
+    color: #2a8a7a !important;
+    text-shadow: 
+        -1px -1px 0 #1a4a4a,
+        1px -1px 0 #1a4a4a,
+        -1px 1px 0 #1a4a4a,
+        1px 1px 0 #1a4a4a !important;
+}
+
+.review-arrow:hover {
+    color: #1a6a5a !important;
+}
+
+/* Features Section (style3) */
+.wrapper.style3 .features li {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.wrapper.style3 .features li h3 {
+    color: #8aa8a8 !important;
+}
+
+.wrapper.style3 .features li p {
+    color: #d5e0e0 !important;
+}
+
+/* Photo Strip */
+.photo-item-vertical {
+    background: #1a4a4a !important;
+}
+
+.photo-item-vertical img {
+    border: 2px solid #8aa8a8 !important;
+}
+
+.photo-item-vertical:hover img {
+    border-color: #2a8a7a !important;
+}
+
+/* Footer */
+#footer {
+    background: #0a2a2a !important;
+}
+
+#footer h2, #footer h3 {
+    color: #e2dbd3 !important;
+}
+
+#footer p {
+    color: #8aa8a8 !important;
+}
+
+#footer a {
+    color: #8aa8a8 !important;
+}
+
+#footer a:hover {
+    color: #5ab5a8 !important;
+}
+
+/* CTA Section */
+#cta {
+    background: #2a8a7a !important;
+}
+
+#cta h2 {
+    color: #e2dbd3 !important;
+}
+
+#cta p {
+    color: #f5ede3 !important;
+}
+
+#cta .button {
+    border-color: #e2dbd3 !important;
+    color: #e2dbd3 !important;
+}
+
+#cta .button.primary {
+    background: #1a4a4a !important;
+    border-color: #1a4a4a !important;
+    color: #e2dbd3 !important;
+}
+
+#cta .button.primary:hover {
+    background: #0a2a2a !important;
+    border-color: #0a2a2a !important;
+}
+
+/* See More Link - Updated Color */
+#banner .more {
+    color: #e2dbd3 !important;  /* ← Changed to e2dbd3 */
+}
+
+/* See More Arrow */
+#banner .more::after {
+    color: #e2dbd3 !important;
+}
+/* ============================================
+   SPOTLIGHT SECTIONS - LIGHTER TEXT
+   ============================================ */
+
+/* Session Headings - Lighter */
+.spotlight .content h2 {
+    color: #2a7a7a !important;
+}
+
+/* Session Descriptions - Lighter */
+.spotlight .content p {
+    color: #5a7a7a !important;
+}
+
+/* ============================================
+   GENERAL TEXT - LIGHTER
+   ============================================ */
+
+/* All headings - lighter */
+h1, h2, h3, h4, h5, h6 {
+    color: #2a7a7a !important;
+}
+
+/* All body text - lighter */
+body, p, li, .content p, .description {
+    color: #5a7a7a !important;
+}
+
+/* Review text - lighter */
+.review-text {
+    color: #2a7a7a !important;
+}
+
+/* Review author - lighter */
+.review-author {
+    color: #2a7a7a !important;
+}
+
+/* Responsive - Mobile Menu */
+@media screen and (max-width: 736px) {
+    #menu {
+        background: #0a2a2a !important;
+    }
+}
+
+/* Slant Dividers - Match Hybrid Colors */
+.slant-divider-dark {
+    background: #1a4a4a !important;
+}
+
+.slant-divider-light {
+    background: #faf6f0 !important;
+}
+
+/* ============================================
+   BANNER TEXT COLORS - MATCH PORTRAIT SESSION 1
+   ============================================ */
+
+/* Main Heading - Connor Scott Photography */
+#banner .inner h2 {
+    color: #e2dbd3 !important;  /* ← Cream - matches Portrait Session 1 background */
+}
+
+/* Subheader Text */
+#banner .inner p {
+    color: #e2dbd3 !important;  /* ← Cream - matches Portrait Session 1 background */
+}
+
+/* Book Now Button - Text Color */
+#banner .button.primary {
+    color: #e2dbd3 !important;  /* ← Cream - matches Portrait Session 1 background */
+    background: #2a7a7a !important;  /* ← Soft Teal background for button */
+    border-color: #2a7a7a !important;
+}
+
+#banner .button.primary:hover {
+    background: #1a6a5a !important;
+    border-color: #1a6a5a !important;
+    color: #e2dbd3 !important;
+}
+
+#header .logo a, 
+#header h1 a, 
+.site-title {
+    color: #e2dbd3 !important;
+}
+
+/* FINAL OVERRIDE - e2dbd3 Colors */
+#header h1 a,
+#header .menuToggle,
+#banner .more,
+#banner .more::after,
+#cta .button:not(.primary) {
+    color: #e2dbd3 !important;
+}
+
+#header .menuToggle span,
+#header .menuToggle span::before,
+#header .menuToggle span::after,
+#banner .more::after,
+#cta .button:not(.primary) {
+    border-color: #e2dbd3 !important;
+    background-color: #1b4a4b !important;
+}
