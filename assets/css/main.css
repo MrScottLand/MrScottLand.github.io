@@ -4654,35 +4654,3 @@ body, p, li, .content p, .description {
 .site-title {
     color: #e2dbd3 !important;
 }
-
-/* Force Mobile Menu Toggle (3 Lines) Color */
-#navPanelToggle {
-    color: #e2dbd3 !important;
-    background-color: transparent !important; /* Ensure no background box interferes */
-}
-
-#navPanelToggle .fa-bars {
-    color: #e2dbd3 !important;
-    fill: #e2dbd3 !important; /* In case it's rendering as an SVG fill */
-}
-
-/* Force Menu Text and Close Button Color */
-#navPanel {
-    background-color: #1c1d26 !important; /* Optional: Ensure menu background is dark so text is visible */
-}
-
-#navPanel .link {
-    color: #e2dbd3 !important;
-    border-bottom-color: rgba(226, 219, 211, 0.3) !important;
-}
-
-#navPanel .close {
-    color: #e2dbd3 !important;
-}
-
-/* Fix for hover states that might revert to white */
-#navPanelToggle:hover,
-#navPanel .link:hover {
-    color: #e2dbd3 !important;
-    opacity: 1 !important;
-}
