@@ -4670,5 +4670,5 @@ body, p, li, .content p, .description {
 #banner .more::after,
 #cta .button:not(.primary) {
     border-color: #e2dbd3 !important;
-    background-color: #e2dbd3 !important;
+    background-color: #1b4a4b !important;
 }
