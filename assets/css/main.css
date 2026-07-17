@@ -4656,28 +4656,21 @@ body, p, li, .content p, .description {
 }
 
 /* ============================================
-   HEADER & MENU - e2dbd3
+   MENU TEXT & HAMBURGER LINES ONLY - e2dbd3
    ============================================ */
 
-/* Header Text */
-#header h1 a {
-    color: #e2dbd3 !important;
-}
-
-#header h1 a:hover {
-    color: #faf6f0 !important;
-}
-
-/* "Menu" Text */
+/* "Menu" Text Only - No Background Change */
 #header .menuToggle {
     color: #e2dbd3 !important;
+    background: transparent !important;
 }
 
 #header .menuToggle:hover {
     color: #faf6f0 !important;
+    background: transparent !important;
 }
 
-/* Hamburger Lines */
+/* Hamburger Lines Only - No Background Change */
 #header .menuToggle span,
 #header .menuToggle span::before,
 #header .menuToggle span::after {
