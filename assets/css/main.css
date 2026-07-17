@@ -4655,18 +4655,37 @@ body, p, li, .content p, .description {
     color: #e2dbd3 !important;
 }
 
-/* Change Hamburger Icon Color */
-#navPanelToggle .fa-bars {
+/* ============================================
+   HEADER & MENU - e2dbd3
+   ============================================ */
+
+/* Header Text */
+#header h1 a {
     color: #e2dbd3 !important;
 }
 
-/* Change Mobile Menu Text and Links */
-#navPanel .link {
-    color: #e2dbd3 !important;
-    border-bottom-color: rgba(226, 219, 211, 0.5); /* Optional: Updates the divider lines too */
+#header h1 a:hover {
+    color: #faf6f0 !important;
 }
 
-/* Change Close Icon Color (X) inside the menu */
-#navPanel .close {
+/* "Menu" Text */
+#header .menuToggle {
     color: #e2dbd3 !important;
+}
+
+#header .menuToggle:hover {
+    color: #faf6f0 !important;
+}
+
+/* Hamburger Lines */
+#header .menuToggle span,
+#header .menuToggle span::before,
+#header .menuToggle span::after {
+    background-color: #e2dbd3 !important;
+}
+
+#header .menuToggle:hover span,
+#header .menuToggle:hover span::before,
+#header .menuToggle:hover span::after {
+    background-color: #faf6f0 !important;
 }
